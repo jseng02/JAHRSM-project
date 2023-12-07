@@ -36,6 +36,7 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 600,
     margin: 'auto',
     marginTop: theme.spacing(5),
+    textAlign:'center'
   },
   title: {
     padding: theme.spacing(3, 2.5, 2),
@@ -51,12 +52,12 @@ const classes = useStyles()
 return (
 <Card className={classes.card}>
    
-  <Typography variant="h6" className={classes.title}>Home Page</Typography>
+  <Typography variant="h5" className={classes.title}>JARHSM</Typography>
 <CardMedia className={classes.media}
 image={unicornbikeImg} title="Unicorn Bicycle"/>
 <CardContent>
-<Typography variant="body2" component="p"> 
-Welcome to the MERN Skeleton home page.
+<Typography variant="h5" component="p"> 
+WELCOME TO HOME PAGE.
 </Typography> 
 </CardContent>
 </Card> 
