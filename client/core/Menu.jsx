@@ -27,7 +27,7 @@ const Menu = withRouter(({history}) => (
   <AppBar position="static">
     <Toolbar>
       <Typography variant="h6" color="inherit">
-        MERN Marketplace
+        JARHMS E-COMMERCE
       </Typography>
       <div>
         <Link to="/">
@@ -36,7 +36,7 @@ const Menu = withRouter(({history}) => (
           </IconButton>
         </Link>
         <Link to="/shops/all">
-          <Button style={isActive(history, "/shops/all")}>All Shops</Button>
+          <Button style={isActive(history, "/shops/all")}>Shops</Button>
         </Link>
         <Link to="/cart">
           <Button style={isActive(history, "/cart")}>
@@ -64,11 +64,11 @@ const Menu = withRouter(({history}) => (
         auth.isAuthenticated() && (<span>
           {auth.isAuthenticated().user.seller && (<Link to="/seller/shops"><Button style={isPartActive(history, "/seller/")}>My Shops</Button></Link>)}
           <Link to={"/user/" + auth.isAuthenticated().user._id}>
-            <Button style={isActive(history, "/user/" + auth.isAuthenticated().user._id)}>My Profile</Button>
+            <Button style={isActive(history, "/user/" + auth.isAuthenticated().user._id)}>View Profile</Button>
           </Link>
           <Button color="inherit" onClick={() => {
               auth.clearJWT(() => history.push('/'))
-            }}>Sign out</Button>
+            }}>Log Out</Button>
         </span>)
       }
       </span></div>
