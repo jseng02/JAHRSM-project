@@ -15,6 +15,6 @@ const config = {
   port: 3000,
   jwtSecret: "YOUR_secret_key",
   mongoUri:
-    "mongodb+srv://stellakwatepauleleslie:Rk2Oc0cUP8eXThVu@cluster0.rzs6elo.mongodb.net/?retryWrites=true&w=majority",
+  "mongodb+srv://Blessing:qzzJjISAcwfPklIo@cluster0.txlxgvp.mongodb.net/Skeleton?retryWrites=true&w=majority",
 };
 export default config;
