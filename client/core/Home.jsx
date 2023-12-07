@@ -29,14 +29,14 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import unicornbikeImg from './../assets/images/unicornbikeImg.jpg';
-   
+
 
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 600,
     margin: 'auto',
     marginTop: theme.spacing(5),
-    textAlign:'center'
+    textAlign: 'center'
   },
   title: {
     padding: theme.spacing(3, 2.5, 2),
@@ -47,19 +47,19 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function Home(){ 
-const classes = useStyles()
-return (
-<Card className={classes.card}>
-   
-  <Typography variant="h5" className={classes.title}>JARHSM</Typography>
-<CardMedia className={classes.media}
-image={unicornbikeImg} title="Unicorn Bicycle"/>
-<CardContent>
-<Typography variant="h5" component="p"> 
-WELCOME TO HOME PAGE
-</Typography> 
-</CardContent>
-</Card> 
-)
+export default function Home() {
+  const classes = useStyles()
+  return (
+    <Card className={classes.card}>
+
+      <Typography variant="h5" className={classes.title}>JARHSM</Typography>
+      <CardMedia className={classes.media}
+        image={unicornbikeImg} title="Unicorn Bicycle" />
+      <CardContent>
+        <Typography variant="h5" component="p">
+          WELCOME TO JARHSM HOME PAGE
+        </Typography>
+      </CardContent>
+    </Card>
+  )
 }
