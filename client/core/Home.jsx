@@ -57,7 +57,7 @@ return (
 image={unicornbikeImg} title="Unicorn Bicycle"/>
 <CardContent>
 <Typography variant="h5" component="p"> 
-WELCOME TO HOME PAGE.
+WELCOME TO HOME PAGE
 </Typography> 
 </CardContent>
 </Card> 
