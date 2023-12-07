@@ -57,7 +57,7 @@ export default function Home() {
         image={unicornbikeImg} title="Unicorn Bicycle" />
       <CardContent>
         <Typography variant="h5" component="p">
-          WELCOME HOME PAGE
+          WELCOME TO JARHSM HOME PAGE
         </Typography>
       </CardContent>
     </Card>
