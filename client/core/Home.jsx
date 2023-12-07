@@ -63,28 +63,3 @@ WELCOME TO HOME PAGE
 </Card> 
 )
 }
-
-/*const MyComponent = () => {
-  const classes = useStyles();
-
-  return (
-    <Card className={classes.card}>
-      <CardContent>
-        <Typography variant="h6" className={classes.title}>
-          Card Title
-        </Typography>
-        <CardMedia
-          className={classes.media}
-          image={unicornbikeImg}
-          title="Unicorn Bike"
-        />
-        <Typography variant="body2" component="p">
-          Card content goes here.
-        </Typography>
-      </CardContent>
-    </Card>
-  );
-};
-
-export default MyComponent;*/
-
