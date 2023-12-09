@@ -1,5 +1,4 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -8,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';  
 import Toolbar from '@material-ui/core/Toolbar';  
-import unicornbikeImg from './../assets/images/unicornbikeImg.jpg';
+import unicornbikeImg from './../assets/images/unicornbikeImg.jpg';  // Fix the path here
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -61,11 +60,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Home() {
   const classes = useStyles();
-  const history = useHistory();
-
-  const handleExploreClick = () => {
-    history.push('/explore');
-  };
 
   return (
     <div>
@@ -73,12 +67,20 @@ export default function Home() {
         <Typography variant="h4" className={classes.title}>
           Welcome to JARHSM
         </Typography>
-        <CardMedia className={classes.media} image={unicornbikeImg} title="Unicorn Bicycle" />
+        <a href="assets/images/unicornbikelmg.jpg" target="_blank" rel="noopener noreferrer">
+          <CardMedia className={classes.media} image={unicornbikeImg} title="Unicorn Bicycle" />
+        </a>
         <CardContent className={classes.content}>
           <Typography variant="body1" className={classes.welcomeText}>
             Experience the beauty of our E-Commerce Website named JARHSM. Explore and discover all that we offer.
           </Typography>
-          <Button variant="contained" className={classes.exploreButton} onClick={handleExploreClick}>
+          <Button
+            variant="contained"
+            className={classes.exploreButton}
+            href="assets/images/unicornbikeImg.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Explore Now
           </Button>
         </CardContent>
@@ -93,4 +95,3 @@ export default function Home() {
     </div>
   );
 }
-
