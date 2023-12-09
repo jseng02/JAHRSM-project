@@ -5,8 +5,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import AppBar from '@material-ui/core/AppBar';  
-import Toolbar from '@material-ui/core/Toolbar';  
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
 import unicornbikeImg from './../assets/images/unicornbikeImg.jpg';  // Fix the path here
 
 const useStyles = makeStyles((theme) => ({
@@ -77,7 +77,7 @@ export default function Home() {
           <Button
             variant="contained"
             className={classes.exploreButton}
-            href="assets/images/unicornbikeImg.jpg"
+            href="/index.html"
             target="_blank"
             rel="noopener noreferrer"
           >
