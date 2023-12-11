@@ -4,7 +4,7 @@ import cookieParser from 'cookie-parser';
 import compress from 'compression';
 import cors from 'cors';
 import helmet from 'helmet';
-import path from 'path';
+import path from 'path'; // Import the path module
 import userRoutes from './routes/user.routes.js';
 import authRoutes from './routes/auth.routes.js';
 import shopRoutes from './routes/shop.routes.js';
