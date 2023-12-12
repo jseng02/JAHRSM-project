@@ -1,5 +1,6 @@
 import mongoose from 'mongoose'
 import crypto from 'crypto'
+//const mongoose = require('mongoose');
 const ShopSchema = new mongoose.Schema({
     name: {
         type: String,
