@@ -204,7 +204,11 @@ export default function CartItems(props) {
             {!props.checkout && auth.isAuthenticated() ? (
               <div>
                 <Button
+<<<<<<< HEAD
                   color="Primary"
+=======
+                  color="secondary"
+>>>>>>> b2c879503ff1bd1110b755742e93f30be972367f
                   variant="contained"
                   onClick={openCheckout}
                   style={{ marginBottom: '20px' }} // Adjust the value as needed
