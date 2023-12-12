@@ -1,15 +1,15 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import cookieParser from 'cookie-parser';
-import compress from 'compression';
-import cors from 'cors';
+import express from 'express';;
+import bodyParser from 'body-parser';;
+import cookieParser from 'cookie-parser';;
+import compress from 'compression';;
+import cors from 'cors';;
 import helmet from 'helmet';
 import path from 'path'; // Import the path module
-import userRoutes from './routes/user.routes.js';
-import authRoutes from './routes/auth.routes.js';
-import shopRoutes from './routes/shop.routes.js';
-import productRoutes from './routes/product.routes.js';
-import orderRoutes from './routes/order.routes.js';
+import userRoutes from './routes/user.routes.js';;
+import authRoutes from './routes/auth.routes.js';;
+import shopRoutes from './routes/shop.routes.js';;
+import productRoutes from './routes/product.routes.js';;
+import orderRoutes from './routes/order.routes.js';;
 
 const app = express()
 const CURRENT_WORKING_DIR = process.cwd()
